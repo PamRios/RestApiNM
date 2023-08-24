@@ -2,7 +2,7 @@
     "presets": [
         ["env", {
             "targets": {
-                "mode": "current"
+                "node": "current"
             }
         }]
     ]
