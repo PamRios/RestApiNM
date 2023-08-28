@@ -8,7 +8,7 @@
   "scripts": {
     "build": "yarn run clean && babel ./src/index.js -d dist",
     "clean": "rm -rf ./dist",
-    "dev": "NODE_ENV=development node ./dist/index.js"
+    "dev": "NODE_ENV=development babel-watch --watch -- ./dist/index.js"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
