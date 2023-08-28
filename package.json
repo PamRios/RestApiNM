@@ -6,14 +6,21 @@
   "author": "PamRios <124759381+PamRios@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development node src/index.js"
+    "build": "yarn run clean && babel ./src/index.js -d dist",
+    "clean": "rm -rf ./dist",
+    "dev": "NODE_ENV=development node ./dist/index.js"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "babel-watch": "^7.8.1",
     "eslint": "^8.47.0",
     "eslint-config-airbnb": "^19.0.4"
   }
