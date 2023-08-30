@@ -6,7 +6,7 @@
   "author": "PamRios <124759381+PamRios@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development babel-watch --watch -- ./dist/index.js",
+    "dev": "cross-env NODE_ENV=development babel-watch --watch -- ./dist/index.js",
     "build": "yarn run clean && babel ./src/index.js -d dist",
     "clean": "rm -rf ./dist"
   },
