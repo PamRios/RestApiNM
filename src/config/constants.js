@@ -1,4 +1,4 @@
-const devConfig = {MONGO_URL: "mongodb://localhost/restapinm-dev", };
+const devConfig = {MONGO_URL: "mongodb+srv://admin:admin123@cluster0.itxniev.mongodb.net/?retryWrites=true&w=majority", };
 const testConfig = {MONGO_URL: "mongodb://localhost/restapinm-test", };
 const prodConfig = {MONGO_URL: "mongodb://localhost/restapinm-prod", };
 const defaultConfig = {
