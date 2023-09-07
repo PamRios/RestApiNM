@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development babel-watch --watch -- ./src/index.js",
-    "build": "yarn run clean && babel ./src/index.js -d dist",
+    "build": "yarn run clean && babel ./src --out-dir dist --copy-files",
     "clean": "rm -rf ./dist"
   },
   "dependencies": {
@@ -18,7 +18,8 @@
     "helmet": "^7.0.0",
     "mongo": "^0.1.0",
     "mongodb": "^6.0.0",
-    "mongoose": "^7.5.0"
+    "mongoose": "^7.5.0",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",

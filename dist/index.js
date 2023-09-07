@@ -1,10 +1,10 @@
 "use strict";
 
 var _express = _interopRequireDefault(require("express"));
-var _constants = _interopRequireDefault(require("../src/config/constants"));
+var _constants = _interopRequireDefault(require("./config/constants"));
 require("../src/config/database");
-var _middlewares = _interopRequireDefault(require("../src/config/middlewares"));
-var _modules = _interopRequireDefault(require("../src/modules"));
+var _middlewares = _interopRequireDefault(require("./config/middlewares"));
+var _modules = _interopRequireDefault(require("./modules"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const app = (0, _express.default)();
 (0, _middlewares.default)(app);

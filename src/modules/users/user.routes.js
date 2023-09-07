@@ -1,7 +1,9 @@
 import {Router} from 'express';
 import * as userController from "./user.controllers";
 
-const routes = new Router();
+let routes = new Router();
 routes = new Router();
-routes.post('./singup', userController.singUp);
+
+// POST /api/v1/users/singup
+routes.post('/singup', userController.singUp);
 export default routes;

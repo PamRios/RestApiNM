@@ -1,8 +1,8 @@
 import express from "express";
-import constants from "../src/config/constants";
+import constants from "./config/constants";
 import "../src/config/database";
-import middlewaresConfig from "../src/config/middlewares";
-import apiRoutes from "../src/modules";
+import middlewaresConfig from "./config/middlewares";
+import apiRoutes from "./modules";
 const app = express();
 middlewaresConfig(app);
 app.get('/', (req, res) =>{

@@ -1,4 +1,6 @@
 import User from "./user.model";
+
+// POST /api/v1/users/singup
 export async function singUp(req, res) {
     try {
         const user = await User.create(req.body);
