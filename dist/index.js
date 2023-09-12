@@ -2,7 +2,7 @@
 
 var _express = _interopRequireDefault(require("express"));
 var _constants = _interopRequireDefault(require("./config/constants"));
-require("../src/config/database");
+require("./config/database");
 var _middlewares = _interopRequireDefault(require("./config/middlewares"));
 var _modules = _interopRequireDefault(require("./modules"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

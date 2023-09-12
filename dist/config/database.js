@@ -3,6 +3,8 @@
 var _mongoose = _interopRequireDefault(require("mongoose"));
 var _constants = _interopRequireDefault(require("./constants"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+/* eslint-disable no-console */
+
 _mongoose.default.Promise = global.Promise;
 try {
   _mongoose.default.connect(_constants.default.MONGO_URL);
