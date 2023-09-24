@@ -11,6 +11,8 @@ try {
 } catch (err) {
   mongoose.createConnection(constants.MONGO_URL);
 }
-mongoose.connection.once('open', () => console.log('MongoDB Running')).on('error', (e) => {
-  throw e;
-});
+mongoose.connection
+  .once('open', () => console.log('MongoDB Running'))
+  .on('error', (e) => {
+    throw e;
+  });
