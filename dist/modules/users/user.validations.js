@@ -1,14 +1,15 @@
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.passwordReg = exports.default = void 0;
-var _joi = _interopRequireDefault(require("joi"));
+const _joi = _interopRequireDefault(require("joi"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const passwordReg = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6, }/;
 exports.passwordReg = passwordReg;
-var _default = {
+const _default = {
   signUp: {
     body: _joi.default.object({
       email: _joi.default.string().email().required().messages({

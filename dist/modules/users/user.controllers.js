@@ -1,10 +1,11 @@
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.signUp = signUp;
-var _user = _interopRequireDefault(require("./user.model"));
+const _user = _interopRequireDefault(require("./user.model"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // POST /api/v1/users/signup
 async function signUp(req, res) {

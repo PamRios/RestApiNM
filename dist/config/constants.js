@@ -1,4 +1,4 @@
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -26,7 +26,7 @@ function envConfig(env) {
       return prodConfig;
   }
 }
-var _default = {
+const _default = {
   ...defaultConfig,
   ...envConfig(process.env.NODE_ENV)
 };

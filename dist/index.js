@@ -1,10 +1,11 @@
-"use strict";
 
-var _express = _interopRequireDefault(require("express"));
-var _constants = _interopRequireDefault(require("./config/constants"));
+
+const _express = _interopRequireDefault(require("express"));
+const _constants = _interopRequireDefault(require("./config/constants"));
 require("./config/database");
-var _middlewares = _interopRequireDefault(require("./config/middlewares"));
-var _modules = _interopRequireDefault(require("./modules"));
+const _middlewares = _interopRequireDefault(require("./config/middlewares"));
+const _modules = _interopRequireDefault(require("./modules"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 /* eslint-disable no-console */
 
