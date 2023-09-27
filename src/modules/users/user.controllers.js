@@ -1,7 +1,7 @@
 import User from './user.model';
 
 // POST /api/v1/users/signup
-export async function signUp(req, res) {
+export async function signup(req, res) {
   try {
     const user = await User.create(req.body);
     return res.status(201).json(user);

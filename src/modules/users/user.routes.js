@@ -6,5 +6,5 @@ import userValidation from './user.validations';
 const routes = new Router();
 
 // POST /api/v1/users/signup
-routes.post('/signup', validate(userValidation.signUp), userController.signUp);
+routes.post('/signup', validate(userValidation.signup), userController.signup);
 export default routes;

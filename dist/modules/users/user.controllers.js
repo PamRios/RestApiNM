@@ -1,14 +1,13 @@
-Object.defineProperty(exports, '__esModule', {
-  value: true,
-});
-exports.signUp = signUp;
-const _user = _interopRequireDefault(require('./user.model'));
+"use strict";
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.signup = signup;
+var _user = _interopRequireDefault(require("./user.model"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // POST /api/v1/users/signup
-async function signUp(req, res) {
+async function signup(req, res) {
   try {
     const user = await _user.default.create(req.body);
     return res.status(201).json(user);
