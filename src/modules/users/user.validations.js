@@ -1,6 +1,6 @@
 import Joi from 'joi';
 
-export const passwordReg = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6, }/;
+export const passwordReg = /^[a-zA-Z0-9]{6}$/;
 export default {
   signup: {
     body: Joi.object({
