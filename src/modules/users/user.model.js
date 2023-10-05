@@ -58,7 +58,7 @@ UserSchema.methods = {
   hashPassword(password) {
     return bcrypt.hashSync(password, 10);
   },
-  autenticacionUsuario(password) {
+  authenticateUser(password) {
     return bcrypt.compare(password, this.password);
   },
 };
