@@ -59,7 +59,7 @@ UserSchema.methods = {
     return bcrypt.hashSync(password, 10);
   },
   autenticacionUsuario(password) {
-    return bcrypt.compare( password, this.password );
+    return bcrypt.compare(password, this.password);
   },
 };
 
