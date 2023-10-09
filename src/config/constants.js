@@ -1,4 +1,4 @@
-const devConfig = { MONGO_URL: 'mongodb://localhost:27017/restapinm-dev' };
+const devConfig = { MONGO_URL: 'mongodb://localhost:27017/restapinm-dev', JWT_SECRET: 'thisisasecret' };
 const testConfig = { MONGO_URL: 'mongodb://localhost:27017/restapinm-test' };
 const prodConfig = { MONGO_URL: 'mongodb://localhost:27017/restapinm-prod' };
 const defaultConfig = {
